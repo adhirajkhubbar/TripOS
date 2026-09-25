@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import ReactDOM from "react-dom/client";
 import {
-  BrowserRouter,
+  HashRouter,
   NavLink,
   Route,
   Routes,
@@ -2701,13 +2701,10 @@ function ProfileModal({
 /* =========================================================
    RENDER
 ========================================================= */
-
-ReactDOM.createRoot(
-  document.getElementById("root")
-).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <HashRouter>
+      <App/>
+    </HashRouter>
   </React.StrictMode>
 );
